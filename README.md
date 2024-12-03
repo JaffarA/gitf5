@@ -12,8 +12,6 @@ A smart git utility that refreshes your main and development branches while pres
 
 ## Installation
 
-### Option 1: Source in your shell profile
-
 Add to your `.bashrc`, `.zshrc`, or similar by sourcing the script:
 
 ```bash
