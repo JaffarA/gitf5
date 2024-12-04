@@ -2,7 +2,6 @@
 
 # gitf5: Smart git branch refresh utility
 # https://github.com/JaffarA/gitf5
-# MIT License
 
 has_branch() {
   git branch | grep -q "$1"
@@ -35,9 +34,3 @@ gitf5() {
   git checkout "${target:-$current}"
   echo "Refreshed ✅"
 }
-
-# If script is sourced, only define the functions
-# If script is run directly, execute with arguments
-if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
-  gitf5 "$@"
-fi
